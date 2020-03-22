@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="md_color_button_text">@color/colorPrimary</item>
+        <item name="md_color_title">@color/colorPrimary</item>
+        <item name="md_color_content">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.Test">
+        <item name="md_color_button_text">@color/colorPrimary</item>
+    </style>
+
+    <style name="MC">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_maxCharacters">40</item>
+        <item name="met_primaryColor">?colorAccent</item>
+        <item name="met_singleLineEllipsis">true</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="MCS">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_maxCharacters">40</item>
+        <item name="met_primaryColor">?colorAccent</item>
+        <item name="met_singleLineEllipsis">true</item>
+    </style>
+
+    <style name="Wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+</resources>

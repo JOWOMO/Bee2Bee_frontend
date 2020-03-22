@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Kleinunternehmer GbR
+  12345 Berlin
+  Bedarf
+  27 Arbeiter.    12 Skills
+-->
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="posting"
+            type="de.wirvsvirus.abee.data.ListPosting" />
+    </data>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#F1F1F1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginStart="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/Wrap"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Kleinunternehmer Mcdonalds"
+                android:text="@={posting.name}" />
+
+            <TextView
+                style="@style/Wrap"
+                tools:text="12345 Berlin"
+                android:id="@+id/plzstadt"
+                android:layout_marginTop="6dp"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@={posting.plzStadt}"/>
+
+            <TextView
+                style="@style/Wrap"
+                tools:text="Bedarf"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/type"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/plzstadt"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@={posting.type}"/>
+
+            <TextView
+                style="@style/Wrap"
+                android:id="@+id/personAmount"
+                android:layout_marginTop="6dp"
+                android:text="@={posting.personAmountString}"
+                tools:text="27 Arbeiter"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <TextView
+                style="@style/Wrap"
+                app:layout_constraintStart_toEndOf="@id/personAmount"
+                app:layout_constraintTop_toTopOf="@id/personAmount"
+                android:layout_marginStart="40dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@={posting.skillAmountString}"
+                tools:text="12 Skills"
+                />
+
+            <ImageView
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="36dp"
+                android:id="@+id/star"
+                android:src="@drawable/star_empty"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@id/star"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="36dp"
+                android:src="@drawable/info_empty"
+                android:layout_height="36dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</layout>

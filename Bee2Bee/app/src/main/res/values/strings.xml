@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ABEE</string>
+
+    <string name="title_map">Map</string>
+    <string name="title_list">List</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bestand">Arbeiter anbieten</string>
+    <string name="bedarf">Arbeiter suchen</string>
+</resources>

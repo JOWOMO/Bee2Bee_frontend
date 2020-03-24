@@ -3,7 +3,7 @@
 [Mehr dazu...](https://devpost.com/software/algorithm-based-employee-exchange-platform)
 
 ## Prerequisites:
-* API key for Google Maps (search for "GOOGLE_API_KEY" in the Manifest)
+* Google Maps API Key is for debug builds only; replace for production
 
 ## Contributors ❤️
 - [@soherrseb](https://github.com/soherrseb)

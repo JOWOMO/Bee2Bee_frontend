@@ -170,7 +170,7 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
                 android:layout_marginBottom="32dp"
-                android:backgroundTint="#F50057"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="Logout"
                 android:textColor="#FFF" />
 

@@ -130,7 +130,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
-            android:backgroundTint="#F50057"
+            android:backgroundTint="@color/colorPrimary"
             android:padding="12dp"
             android:text="Registrieren"
             android:textColor="#FFF" />
